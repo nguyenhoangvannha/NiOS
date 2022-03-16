@@ -11,7 +11,9 @@ import SwiftUI
 struct NhaDoiOSApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            NavigationView{
+                TodosView(todos: Todo.sampleData)
+            }
         }
     }
 }

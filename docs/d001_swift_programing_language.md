@@ -1,7 +1,7 @@
-# [Swift programing language](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
+# [Swift programing language basics](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
 
 What
-- A programing language support frameworks: iOS, macOS, watchOS, tvOS
+- A programing language support to develop application on frameworks: iOS, macOS, watchOS, tvOS
 
 How
 - Data type: Int, Double, Float, Bool, String

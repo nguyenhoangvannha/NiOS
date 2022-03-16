@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		28C1A16227D89EC200C0462A /* NhaDoiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A16127D89EC200C0462A /* NhaDoiOSApp.swift */; };
-		28C1A16427D89EC200C0462A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A16327D89EC200C0462A /* ContentView.swift */; };
+		28C1A16427D89EC200C0462A /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A16327D89EC200C0462A /* MeetingView.swift */; };
 		28C1A16627D89EC300C0462A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C1A16527D89EC300C0462A /* Assets.xcassets */; };
 		28C1A16927D89EC300C0462A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C1A16827D89EC300C0462A /* Preview Assets.xcassets */; };
 		28C1A17327D89EC400C0462A /* NhaDoiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A17227D89EC400C0462A /* NhaDoiOSTests.swift */; };
 		28C1A17D27D89EC400C0462A /* NhaDoiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A17C27D89EC400C0462A /* NhaDoiOSUITests.swift */; };
 		28C1A17F27D89EC400C0462A /* NhaDoiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A17E27D89EC400C0462A /* NhaDoiOSUITestsLaunchTests.swift */; };
+		28C1A18D27D8A71800C0462A /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A18C27D8A71800C0462A /* Theme.swift */; };
+		28C1A18F27D8A81C00C0462A /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A18E27D8A81C00C0462A /* Todo.swift */; };
+		28C1A19227D8A95500C0462A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A19127D8A95500C0462A /* CardView.swift */; };
+		28C1A19527D8ABD300C0462A /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A19427D8ABD300C0462A /* TodosView.swift */; };
+		28C1A19727D8B20D00C0462A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A19627D8B20D00C0462A /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +41,7 @@
 /* Begin PBXFileReference section */
 		28C1A15E27D89EC200C0462A /* NhaDoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NhaDoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C1A16127D89EC200C0462A /* NhaDoiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhaDoiOSApp.swift; sourceTree = "<group>"; };
-		28C1A16327D89EC200C0462A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		28C1A16327D89EC200C0462A /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		28C1A16527D89EC300C0462A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28C1A16827D89EC300C0462A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		28C1A16E27D89EC400C0462A /* NhaDoiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NhaDoiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +49,11 @@
 		28C1A17827D89EC400C0462A /* NhaDoiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NhaDoiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C1A17C27D89EC400C0462A /* NhaDoiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhaDoiOSUITests.swift; sourceTree = "<group>"; };
 		28C1A17E27D89EC400C0462A /* NhaDoiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhaDoiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		28C1A18C27D8A71800C0462A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		28C1A18E27D8A81C00C0462A /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		28C1A19127D8A95500C0462A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		28C1A19427D8ABD300C0462A /* TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosView.swift; sourceTree = "<group>"; };
+		28C1A19627D8B20D00C0462A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +104,9 @@
 		28C1A16027D89EC200C0462A /* NhaDoiOS */ = {
 			isa = PBXGroup;
 			children = (
+				28C1A19027D8A94500C0462A /* Views */,
+				28C1A18B27D8A6F200C0462A /* Models */,
 				28C1A16127D89EC200C0462A /* NhaDoiOSApp.swift */,
-				28C1A16327D89EC200C0462A /* ContentView.swift */,
 				28C1A16527D89EC300C0462A /* Assets.xcassets */,
 				28C1A16727D89EC300C0462A /* Preview Content */,
 			);
@@ -125,6 +136,26 @@
 				28C1A17E27D89EC400C0462A /* NhaDoiOSUITestsLaunchTests.swift */,
 			);
 			path = NhaDoiOSUITests;
+			sourceTree = "<group>";
+		};
+		28C1A18B27D8A6F200C0462A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28C1A18C27D8A71800C0462A /* Theme.swift */,
+				28C1A18E27D8A81C00C0462A /* Todo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		28C1A19027D8A94500C0462A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28C1A16327D89EC200C0462A /* MeetingView.swift */,
+				28C1A19127D8A95500C0462A /* CardView.swift */,
+				28C1A19427D8ABD300C0462A /* TodosView.swift */,
+				28C1A19627D8B20D00C0462A /* DetailView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28C1A16427D89EC200C0462A /* ContentView.swift in Sources */,
+				28C1A18D27D8A71800C0462A /* Theme.swift in Sources */,
+				28C1A16427D89EC200C0462A /* MeetingView.swift in Sources */,
 				28C1A16227D89EC200C0462A /* NhaDoiOSApp.swift in Sources */,
+				28C1A19727D8B20D00C0462A /* DetailView.swift in Sources */,
+				28C1A18F27D8A81C00C0462A /* Todo.swift in Sources */,
+				28C1A19527D8ABD300C0462A /* TodosView.swift in Sources */,
+				28C1A19227D8A95500C0462A /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
