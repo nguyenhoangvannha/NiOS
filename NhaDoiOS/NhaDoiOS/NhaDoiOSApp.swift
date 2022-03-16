@@ -9,10 +9,11 @@ import SwiftUI
 
 @main
 struct NhaDoiOSApp: App {
+    @State private var todos = Todo.sampleData
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                TodosView(todos: Todo.sampleData)
+                TodosView(todos: $todos)
             }
         }
     }
