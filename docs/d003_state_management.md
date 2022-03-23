@@ -1,5 +1,4 @@
-# State and Data Flow in SwiftUI
-
+# [State and Data Flow](https://developer.apple.com/documentation/swiftui/state-and-data-flow)
 
 ## What
     Control and respond to the flow of data and changes within your app’s models.
@@ -22,3 +21,16 @@
 
 - Manage persistent data stored with Core Data using a [FetchRequest](https://developer.apple.com/documentation/swiftui/fetchrequest).
 
+## Property wrapper
+
+@State - Creates an observable value
+
+@Binding - Reference to a source of truth
+
+@StateObject - Creates an observable object
+
+@ObservedObject - Reference to observable object with an explicit injection chain
+
+@EnvironmentObject - Reference to observable objectsupplied by a parent or ancestor view
+
+Source: https://developer.apple.com/documentation/swiftui/state-and-data-flow

@@ -10,6 +10,7 @@
 		2898DC2F27E1D6C60066B1D7 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2898DC2E27E1D6C50066B1D7 /* DetailEditView.swift */; };
 		2898DC3127E1DA2C0066B1D7 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2898DC3027E1DA2C0066B1D7 /* ThemeView.swift */; };
 		2898DC3327E1DA930066B1D7 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2898DC3227E1DA930066B1D7 /* ThemePicker.swift */; };
+		2898DC3527E1E6B40066B1D7 /* TodoTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2898DC3427E1E6B40066B1D7 /* TodoTimer.swift */; };
 		28C1A16227D89EC200C0462A /* NhaDoiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A16127D89EC200C0462A /* NhaDoiOSApp.swift */; };
 		28C1A16427D89EC200C0462A /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A16327D89EC200C0462A /* MeetingView.swift */; };
 		28C1A16627D89EC300C0462A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C1A16527D89EC300C0462A /* Assets.xcassets */; };
@@ -45,6 +46,7 @@
 		2898DC2E27E1D6C50066B1D7 /* DetailEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		2898DC3027E1DA2C0066B1D7 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		2898DC3227E1DA930066B1D7 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
+		2898DC3427E1E6B40066B1D7 /* TodoTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTimer.swift; sourceTree = "<group>"; };
 		28C1A15E27D89EC200C0462A /* NhaDoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NhaDoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C1A16127D89EC200C0462A /* NhaDoiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhaDoiOSApp.swift; sourceTree = "<group>"; };
 		28C1A16327D89EC200C0462A /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 			children = (
 				28C1A18C27D8A71800C0462A /* Theme.swift */,
 				28C1A18E27D8A81C00C0462A /* Todo.swift */,
+				2898DC3427E1E6B40066B1D7 /* TodoTimer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				28C1A18D27D8A71800C0462A /* Theme.swift in Sources */,
+				2898DC3527E1E6B40066B1D7 /* TodoTimer.swift in Sources */,
 				28C1A16427D89EC200C0462A /* MeetingView.swift in Sources */,
 				28C1A16227D89EC200C0462A /* NhaDoiOSApp.swift in Sources */,
 				2898DC3327E1DA930066B1D7 /* ThemePicker.swift in Sources */,

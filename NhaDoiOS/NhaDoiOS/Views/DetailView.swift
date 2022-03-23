@@ -13,6 +13,8 @@ struct DetailView: View {
     @State private var data = Todo.Data()
     @State private var isPresentingEditView = false
     
+    @StateObject var todoTimer = TodoTimer()
+    
     var body: some View {
         List {
             Section(header: Text("Todo Info")) {
@@ -41,7 +43,7 @@ struct DetailView: View {
         }
         .sheet(isPresented: $isPresentingEditView) {
             NavigationView {
-                DetailEditView(data: $data)
+                DetailEditView(data: $data, todoTimer: todoTimer)
                     .navigationTitle(todo.title)
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {
@@ -56,6 +58,7 @@ struct DetailView: View {
                             }
                         }
                     }
+                    .environmentObject(todoTimer)
             }
         }
     }
