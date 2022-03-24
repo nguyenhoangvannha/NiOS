@@ -9,11 +9,14 @@ import SwiftUI
 
 @main
 struct NhaDoiOSApp: App {
+    @State private var todos = Todo.sampleData
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                TodosView(todos: Todo.sampleData)
+                TodosView(todos: $todos)
             }
+            .environment(\.myCustomValue, "Feature 1 enable")
+            //.myCustomValue("Feature 1 disable")
         }
     }
 }

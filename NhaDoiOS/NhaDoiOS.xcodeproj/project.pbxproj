@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2898DC2F27E1D6C60066B1D7 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2898DC2E27E1D6C50066B1D7 /* DetailEditView.swift */; };
+		2898DC3127E1DA2C0066B1D7 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2898DC3027E1DA2C0066B1D7 /* ThemeView.swift */; };
+		2898DC3327E1DA930066B1D7 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2898DC3227E1DA930066B1D7 /* ThemePicker.swift */; };
+		2898DC3527E1E6B40066B1D7 /* TodoTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2898DC3427E1E6B40066B1D7 /* TodoTimer.swift */; };
 		28C1A16227D89EC200C0462A /* NhaDoiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A16127D89EC200C0462A /* NhaDoiOSApp.swift */; };
 		28C1A16427D89EC200C0462A /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A16327D89EC200C0462A /* MeetingView.swift */; };
 		28C1A16627D89EC300C0462A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28C1A16527D89EC300C0462A /* Assets.xcassets */; };
@@ -19,6 +23,8 @@
 		28C1A19227D8A95500C0462A /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A19127D8A95500C0462A /* CardView.swift */; };
 		28C1A19527D8ABD300C0462A /* TodosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A19427D8ABD300C0462A /* TodosView.swift */; };
 		28C1A19727D8B20D00C0462A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C1A19627D8B20D00C0462A /* DetailView.swift */; };
+		28D02F0227EB143C0031DB3D /* UserPreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D02F0127EB143C0031DB3D /* UserPreferencesView.swift */; };
+		28D02F0427EB1A240031DB3D /* CustomEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D02F0327EB1A240031DB3D /* CustomEnvironmentKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2898DC2E27E1D6C50066B1D7 /* DetailEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
+		2898DC3027E1DA2C0066B1D7 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
+		2898DC3227E1DA930066B1D7 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
+		2898DC3427E1E6B40066B1D7 /* TodoTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTimer.swift; sourceTree = "<group>"; };
 		28C1A15E27D89EC200C0462A /* NhaDoiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NhaDoiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C1A16127D89EC200C0462A /* NhaDoiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NhaDoiOSApp.swift; sourceTree = "<group>"; };
 		28C1A16327D89EC200C0462A /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
@@ -54,6 +64,8 @@
 		28C1A19127D8A95500C0462A /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		28C1A19427D8ABD300C0462A /* TodosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosView.swift; sourceTree = "<group>"; };
 		28C1A19627D8B20D00C0462A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		28D02F0127EB143C0031DB3D /* UserPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPreferencesView.swift; sourceTree = "<group>"; };
+		28D02F0327EB1A240031DB3D /* CustomEnvironmentKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEnvironmentKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +155,8 @@
 			children = (
 				28C1A18C27D8A71800C0462A /* Theme.swift */,
 				28C1A18E27D8A81C00C0462A /* Todo.swift */,
+				2898DC3427E1E6B40066B1D7 /* TodoTimer.swift */,
+				28D02F0327EB1A240031DB3D /* CustomEnvironmentKey.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -150,10 +164,14 @@
 		28C1A19027D8A94500C0462A /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2898DC2E27E1D6C50066B1D7 /* DetailEditView.swift */,
 				28C1A16327D89EC200C0462A /* MeetingView.swift */,
 				28C1A19127D8A95500C0462A /* CardView.swift */,
 				28C1A19427D8ABD300C0462A /* TodosView.swift */,
 				28C1A19627D8B20D00C0462A /* DetailView.swift */,
+				2898DC3027E1DA2C0066B1D7 /* ThemeView.swift */,
+				2898DC3227E1DA930066B1D7 /* ThemePicker.swift */,
+				28D02F0127EB143C0031DB3D /* UserPreferencesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -289,11 +307,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				28C1A18D27D8A71800C0462A /* Theme.swift in Sources */,
+				2898DC3527E1E6B40066B1D7 /* TodoTimer.swift in Sources */,
 				28C1A16427D89EC200C0462A /* MeetingView.swift in Sources */,
+				28D02F0427EB1A240031DB3D /* CustomEnvironmentKey.swift in Sources */,
 				28C1A16227D89EC200C0462A /* NhaDoiOSApp.swift in Sources */,
+				28D02F0227EB143C0031DB3D /* UserPreferencesView.swift in Sources */,
+				2898DC3327E1DA930066B1D7 /* ThemePicker.swift in Sources */,
+				2898DC2F27E1D6C60066B1D7 /* DetailEditView.swift in Sources */,
 				28C1A19727D8B20D00C0462A /* DetailView.swift in Sources */,
 				28C1A18F27D8A81C00C0462A /* Todo.swift in Sources */,
 				28C1A19527D8ABD300C0462A /* TodosView.swift in Sources */,
+				2898DC3127E1DA2C0066B1D7 /* ThemeView.swift in Sources */,
 				28C1A19227D8A95500C0462A /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
