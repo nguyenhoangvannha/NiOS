@@ -33,4 +33,10 @@
 
 @EnvironmentObject - Reference to observable objectsupplied by a parent or ancestor view
 
+@Environment - A property wrapper that reads a value from a view’s environment.
+
+@EnvironmentValues - A collection of environment values propagated through a view hierarchy.
+
+@EnvironmentKey - A key for accessing values in the environment.
+
 Source: https://developer.apple.com/documentation/swiftui/state-and-data-flow

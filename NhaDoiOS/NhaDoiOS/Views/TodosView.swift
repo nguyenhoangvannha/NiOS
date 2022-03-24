@@ -20,10 +20,16 @@ struct TodosView: View {
         }
         .navigationTitle("Daily Todos")
         .toolbar {
-            Button(action: {}) {
-                Image(systemName: "plus")
+            ToolbarItemGroup(placement: .bottomBar) {
+                Button(action: {}) {
+                    Image(systemName: "plus")
+                }.accessibilityLabel("New Todo")
+                
+                NavigationLink(destination: UserPreferencesView()) {
+                    Image(systemName: "ellipsis")
+                }
+                .accessibilityLabel("More")
             }
-            .accessibilityLabel("New Todo")
         }
     }
 }

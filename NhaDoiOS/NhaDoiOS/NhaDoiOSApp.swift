@@ -15,6 +15,8 @@ struct NhaDoiOSApp: App {
             NavigationView{
                 TodosView(todos: $todos)
             }
+            .environment(\.myCustomValue, "Feature 1 enable")
+            //.myCustomValue("Feature 1 disable")
         }
     }
 }
