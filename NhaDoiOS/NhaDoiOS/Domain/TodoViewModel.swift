@@ -9,18 +9,27 @@ import Foundation
 
 
 class TodoViewModel: ObservableObject {
+    private let todoRepository: TodoRepository
+    
     @Published var todos: [Todo] = []
     
+    init(todoRepository: TodoRepository){
+        self.todoRepository = todoRepository
+    }
+    
     func refresh() async {
-        let fetchedTodos = await fetchTodos()
-        self.todos = fetchedTodos
+        do {
+            let fetchedTodos = try await todoRepository.getTodos()
+            self.todos = fetchedTodos
+        } catch {
+            
+        }
+         
+        
     }
     
-    func fetchTodos() async -> [Todo] {
-        return Todo.sampleData
-    }
-    
-    func addTodo(todo: Todo) {
+    func addTodo(todo: Todo) async {
+        await todoRepository.addTodos(todos: [todo])
         todos.append(todo)
     }
 }

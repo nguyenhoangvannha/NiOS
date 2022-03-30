@@ -48,10 +48,12 @@ struct TodosView: View {
                         }
                         ToolbarItem(placement: .confirmationAction) {
                             Button("Add") {
-                                isPresentingNewTodoView = false
-                                let newTodo = Todo(data: newTodoData)
-                                todoViewModel.addTodo(todo: newTodo)
-                                newTodoData = Todo.Data()
+                                Task{
+                                    isPresentingNewTodoView = false
+                                    let newTodo = Todo(data: newTodoData)
+                                    await  todoViewModel.addTodo(todo: newTodo)
+                                    newTodoData = Todo.Data()
+                                }
                             }
                         }
                     }
