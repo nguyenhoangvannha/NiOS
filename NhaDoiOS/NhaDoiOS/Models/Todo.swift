@@ -44,4 +44,11 @@ extension Todo {
         description = data.description
         theme = data.theme
     }
+    
+    init(data: Data) {
+        id = UUID()
+        title = data.title
+        description = data.description
+        theme = data.theme
+    }
 }

@@ -9,14 +9,30 @@ import SwiftUI
 
 @main
 struct NhaDoiOSApp: App {
-    @State private var todos = Todo.sampleData
+    //    @State private var todos = Todo.sampleData
+    @StateObject private var todoViewModel: TodoViewModel = TodoViewModel()
     var body: some Scene {
         WindowGroup {
             NavigationView{
-                TodosView(todos: $todos)
+                TodosView(
+                    //todos: $todos
+                )
             }
             .environment(\.myCustomValue, "Feature 1 enable")
             //.myCustomValue("Feature 1 disable")
+            .environmentObject(todoViewModel)
+            //            .onAppear {
+            //                Task {
+            //                    do {
+            //                        try await todoViewModel.refresh()
+            //                    } catch {
+            //                        fatalError("Error load todos")
+            //                    }
+            //                }
+            //            }
+            .task {
+                await todoViewModel.refresh()
+            }
         }
     }
 }
