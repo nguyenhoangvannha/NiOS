@@ -43,7 +43,7 @@ struct DetailView: View {
         }
         .sheet(isPresented: $isPresentingEditView) {
             NavigationView {
-                DetailEditView(data: $data, todoTimer: todoTimer)
+                DetailEditView(data: $data)
                     .navigationTitle(todo.title)
                     .toolbar {
                         ToolbarItem(placement: .cancellationAction) {

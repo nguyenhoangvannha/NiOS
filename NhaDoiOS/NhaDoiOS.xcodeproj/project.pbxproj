@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		289885DC27F43B9F00C952A5 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289885DB27F43B9F00C952A5 /* TodoViewModel.swift */; };
+		289885E127F44AE700C952A5 /* AbstractTodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289885E027F44AE600C952A5 /* AbstractTodoRepository.swift */; };
+		289885E327F44BC300C952A5 /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289885E227F44BC300C952A5 /* TodoRepository.swift */; };
+		289885E527F453BA00C952A5 /* AbstractTodoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289885E427F453BA00C952A5 /* AbstractTodoDataSource.swift */; };
+		289885E727F453EC00C952A5 /* TodoLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289885E627F453EC00C952A5 /* TodoLocalDataSource.swift */; };
+		289885E927F4560A00C952A5 /* TodoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289885E827F4560A00C952A5 /* TodoStore.swift */; };
 		2898DC2F27E1D6C60066B1D7 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2898DC2E27E1D6C50066B1D7 /* DetailEditView.swift */; };
 		2898DC3127E1DA2C0066B1D7 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2898DC3027E1DA2C0066B1D7 /* ThemeView.swift */; };
 		2898DC3327E1DA930066B1D7 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2898DC3227E1DA930066B1D7 /* ThemePicker.swift */; };
@@ -45,6 +51,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		289885DB27F43B9F00C952A5 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		289885E027F44AE600C952A5 /* AbstractTodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTodoRepository.swift; sourceTree = "<group>"; };
+		289885E227F44BC300C952A5 /* TodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
+		289885E427F453BA00C952A5 /* AbstractTodoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractTodoDataSource.swift; sourceTree = "<group>"; };
+		289885E627F453EC00C952A5 /* TodoLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoLocalDataSource.swift; sourceTree = "<group>"; };
+		289885E827F4560A00C952A5 /* TodoStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoStore.swift; sourceTree = "<group>"; };
 		2898DC2E27E1D6C50066B1D7 /* DetailEditView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		2898DC3027E1DA2C0066B1D7 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		2898DC3227E1DA930066B1D7 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
@@ -93,6 +105,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		289885DA27F4394E00C952A5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				289885DB27F43B9F00C952A5 /* TodoViewModel.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		289885DD27F44A7000C952A5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				289885DF27F44A9200C952A5 /* DataSource */,
+				289885DE27F44A8800C952A5 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		289885DE27F44A8800C952A5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				289885E027F44AE600C952A5 /* AbstractTodoRepository.swift */,
+				289885E227F44BC300C952A5 /* TodoRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		289885DF27F44A9200C952A5 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				289885E427F453BA00C952A5 /* AbstractTodoDataSource.swift */,
+				289885E627F453EC00C952A5 /* TodoLocalDataSource.swift */,
+				289885E827F4560A00C952A5 /* TodoStore.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		28C1A15527D89EC200C0462A = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +164,8 @@
 		28C1A16027D89EC200C0462A /* NhaDoiOS */ = {
 			isa = PBXGroup;
 			children = (
+				289885DD27F44A7000C952A5 /* Data */,
+				289885DA27F4394E00C952A5 /* Domain */,
 				28C1A19027D8A94500C0462A /* Views */,
 				28C1A18B27D8A6F200C0462A /* Models */,
 				28C1A16127D89EC200C0462A /* NhaDoiOSApp.swift */,
@@ -306,18 +356,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				289885E527F453BA00C952A5 /* AbstractTodoDataSource.swift in Sources */,
 				28C1A18D27D8A71800C0462A /* Theme.swift in Sources */,
+				289885E727F453EC00C952A5 /* TodoLocalDataSource.swift in Sources */,
 				2898DC3527E1E6B40066B1D7 /* TodoTimer.swift in Sources */,
 				28C1A16427D89EC200C0462A /* MeetingView.swift in Sources */,
 				28D02F0427EB1A240031DB3D /* CustomEnvironmentKey.swift in Sources */,
 				28C1A16227D89EC200C0462A /* NhaDoiOSApp.swift in Sources */,
+				289885E327F44BC300C952A5 /* TodoRepository.swift in Sources */,
 				28D02F0227EB143C0031DB3D /* UserPreferencesView.swift in Sources */,
 				2898DC3327E1DA930066B1D7 /* ThemePicker.swift in Sources */,
 				2898DC2F27E1D6C60066B1D7 /* DetailEditView.swift in Sources */,
 				28C1A19727D8B20D00C0462A /* DetailView.swift in Sources */,
 				28C1A18F27D8A81C00C0462A /* Todo.swift in Sources */,
+				289885E927F4560A00C952A5 /* TodoStore.swift in Sources */,
 				28C1A19527D8ABD300C0462A /* TodosView.swift in Sources */,
 				2898DC3127E1DA2C0066B1D7 /* ThemeView.swift in Sources */,
+				289885DC27F43B9F00C952A5 /* TodoViewModel.swift in Sources */,
+				289885E127F44AE700C952A5 /* AbstractTodoRepository.swift in Sources */,
 				28C1A19227D8A95500C0462A /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

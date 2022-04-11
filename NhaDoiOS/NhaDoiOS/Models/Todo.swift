@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Todo: Identifiable {
+struct Todo: Identifiable, Decodable, Encodable {
     let id: UUID
     var title, description: String
     var theme: Theme
@@ -40,6 +40,13 @@ extension Todo {
     }
     
     mutating func update(from data: Data) {
+        title = data.title
+        description = data.description
+        theme = data.theme
+    }
+    
+    init(data: Data) {
+        id = UUID()
         title = data.title
         description = data.description
         theme = data.theme
