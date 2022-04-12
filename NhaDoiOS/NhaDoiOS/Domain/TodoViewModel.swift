@@ -9,11 +9,11 @@ import Foundation
 
 
 class TodoViewModel: ObservableObject {
-    private let todoRepository: TodoRepository
+    private let todoRepository: AbstractTodoRepository
     
     @Published var todos: [Todo] = []
     
-    init(todoRepository: TodoRepository){
+    init(todoRepository: AbstractTodoRepository){
         self.todoRepository = todoRepository
     }
     

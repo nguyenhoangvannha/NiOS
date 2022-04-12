@@ -10,8 +10,10 @@ import SwiftUI
 @main
 struct NhaDoiOSApp: App {
     //    @State private var todos = Todo.sampleData
-    @StateObject private var todoViewModel: TodoViewModel = TodoViewModel(todoRepository: TodoRepository(
-        todoLocalDataSource: TodoLocalDataSource(todoStore: TodoStore())))
+
+    @Inject
+    private var todoViewModel: TodoViewModel!
+    
     var body: some Scene {
         WindowGroup {
             NavigationView{

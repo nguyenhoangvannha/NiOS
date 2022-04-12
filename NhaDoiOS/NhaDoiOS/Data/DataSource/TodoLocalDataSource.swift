@@ -9,7 +9,7 @@ import Foundation
 
 
 class TodoLocalDataSource: AbstractTodoDataSource{
-    private let todoStore: TodoStore
+    private let todoStore: TodoStore!
     
     init(todoStore: TodoStore){
         self.todoStore = todoStore
