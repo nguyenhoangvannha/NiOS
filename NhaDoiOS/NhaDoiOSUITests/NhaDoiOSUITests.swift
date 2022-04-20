@@ -22,13 +22,25 @@ class NhaDoiOSUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    // Use recording to get started writing UI tests.
+    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testAddTodo() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        app.buttons["New Todo"].tap()
+        
+        let titleTextField = app.textFields["Title"]
+        titleTextField.tap()
+        titleTextField.typeText("Meet John")
+        
+        let descriptionTextField = app.textFields["Description"]
+        descriptionTextField.tap()
+        descriptionTextField.typeText("Next monday")
+        
+        app.buttons["Add"].tap()
     }
 
     func testLaunchPerformance() throws {

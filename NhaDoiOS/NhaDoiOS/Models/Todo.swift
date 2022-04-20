@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Todo: Identifiable, Decodable, Encodable {
+struct Todo: Identifiable, Decodable, Encodable, Equatable {
     let id: UUID
     var title, description: String
     var theme: Theme
@@ -17,6 +17,14 @@ struct Todo: Identifiable, Decodable, Encodable {
         self.title = title
         self.description = description
         self.theme = theme
+    }
+    
+    static func == (lhs: Todo, rhs: Todo) -> Bool {
+        return
+        lhs.id == rhs.id &&
+        lhs.title == rhs.title &&
+        lhs.description == rhs.description &&
+        lhs.theme == rhs.theme
     }
 }
 
