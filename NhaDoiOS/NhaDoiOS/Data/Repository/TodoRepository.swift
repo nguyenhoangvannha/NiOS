@@ -18,7 +18,7 @@ class TodoRepository: AbstractTodoRepository {
         return try await todoLocalDataSource.getTodos()
     }
     
-    func addTodos(todos: [Todo]) async {
-        return await todoLocalDataSource.addTodos(todos: todos)
+    func addTodos(todos: [Todo]) async throws {
+        return try await todoLocalDataSource.addTodos(todos: todos)
     }
 }
