@@ -90,3 +90,6 @@ fastlane/test_output
 iOSInjectionProject/
 
 Pods
+
+# Appium
+node_modules
