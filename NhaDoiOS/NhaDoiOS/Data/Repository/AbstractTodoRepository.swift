@@ -9,5 +9,5 @@ import Foundation
 
 protocol AbstractTodoRepository {
     func getTodos() async throws -> [Todo]
-    func addTodos(todos: [Todo]) async
+    func addTodos(todos: [Todo]) async throws
 }
