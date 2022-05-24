@@ -16,26 +16,10 @@ class TodoLocalDataSource: AbstractTodoDataSource{
     }
     
     func getTodos() async throws -> [Todo] {
-        try await withCheckedThrowingContinuation { continuation in
-            todoStore.load { result in
-                switch result {
-                case .failure(let error):
-                    continuation.resume(throwing: error)
-                case .success(let todos):
-                    continuation.resume(returning: todos)
-                }
-            }
-        }
+        try await todoStore.load()
     }
     
-    func addTodos(todos: [Todo]) async {
-        todoStore.save(todos: todos, completion: { result in
-            switch result {
-            case .failure(let error):
-                fatalError(error.localizedDescription)
-            case .success(_):
-                break
-            }
-        })
+    func addTodos(todos: [Todo]) async throws{
+       try await todoStore.save(todos: todos)
     }
 }

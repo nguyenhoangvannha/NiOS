@@ -16,42 +16,19 @@ class TodoStore {
         .appendingPathComponent("todos.data")
     }
     
-    func load(completion: @escaping (Result<[Todo], Error>)->Void) {
-        DispatchQueue.global(qos: .background).sync {
-            do {
-                let fileURL = try self.fileURL()
-                guard let file = try? FileHandle(forReadingFrom: fileURL) else {
-                    DispatchQueue.main.async {
-                        completion(.success([]))
-                    }
-                    return
-                }
-                let todos = try JSONDecoder().decode([Todo].self, from: file.availableData)
-                DispatchQueue.main.async {
-                    completion(.success(todos))
-                }
-            } catch {
-                DispatchQueue.main.async {
-                    completion(.failure(error))
-                }
-            }
+    func load() async throws -> [Todo] {
+        let fileURL1 = try self.fileURL()
+        guard let file = try? FileHandle(forReadingFrom: fileURL1) else {
+            return []
         }
+        let todos = try JSONDecoder().decode([Todo].self, from: file.availableData)
+        return todos
     }
     
-    func save(todos: [Todo], completion: @escaping (Result<Int, Error>)->Void) {
-        DispatchQueue.global(qos: .background).sync {
-            do {
-                let data = try JSONEncoder().encode(todos)
-                let outfile = try self.fileURL()
-                try data.write(to: outfile)
-                DispatchQueue.main.async {
-                    completion(.success(todos.count))
-                }
-            } catch {
-                DispatchQueue.main.async {
-                    completion(.failure(error))
-                }
-            }
-        }
+    func save(todos: [Todo]) async throws -> Int {
+        let data = try JSONEncoder().encode(todos)
+        let outfile = try self.fileURL()
+        try data.write(to: outfile)
+        return todos.count
     }
 }

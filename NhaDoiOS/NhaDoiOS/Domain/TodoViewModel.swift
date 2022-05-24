@@ -29,7 +29,11 @@ class TodoViewModel: ObservableObject {
     }
     
     func addTodo(todo: Todo) async {
-        await todoRepository.addTodos(todos: [todo])
-        todos.append(todo)
+        do {
+            try await todoRepository.addTodos(todos: todos + [todo])
+            todos.append(todo)
+        } catch {
+            
+        }
     }
 }
