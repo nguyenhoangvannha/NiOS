@@ -95,13 +95,36 @@ class ViewController: UIViewController {
 //            return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: item)
 //        }
     }
-
+    
+    var itemArray: [Item] = [Item]()
+    
     @objc func onNewTaskButtonTapped() {
-//        var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
-//        snapshot.appendSections([.main])
-//        let newItem = Item(task: .init(), taskRepository: Factory.create())
-//        snapshot.appendItems(viewModel.taskCellViewModels + [newItem])
-//        dataSource!.apply(snapshot, animatingDifferences: true)
+        //        var snapshot = NSDiffableDataSourceSnapshot<Section, Item>()
+        //        snapshot.appendSections([.main])
+        //        let newItem = Item(task: .init(), taskRepository: Factory.create())
+        //        snapshot.appendItems(viewModel.taskCellViewModels + [newItem])
+        //        dataSource!.apply(snapshot, animatingDifferences: true)
+        
+        // Create Alert Controller to prompt the user to input new data
+        var textField: UITextField = UITextField()
+        
+        let ac = UIAlertController(title: "Add new item to the list", message: "", preferredStyle: .alert)
+        
+        let newItemAction = UIAlertAction(title: "Add Item", style: .default) { action in
+            let newItem = Item()
+        
+            newItem.title = textField.text!
+            newItem.done = false
+
+            self.itemArray.append(newItem)
+        }
+        // Add a new textfield to the alert controller to input data
+        ac.addTextField { alertTextField in
+            textField.placeholder = "Add New Item"
+            textField = alertTextField
+        }
+        ac.addAction(newItemAction)
+        present(ac, animated: true, completion: nil)
     }
 }
 
