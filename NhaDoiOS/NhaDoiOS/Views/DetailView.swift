@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import MyCocoapodsLibrary
 
 struct DetailView: View {
     @Binding var todo: Todo
@@ -33,6 +34,7 @@ struct DetailView: View {
                         .background(todo.theme.mainColor)
                         .cornerRadius(4)
                 }
+                MyText()
             }
         }
         .toolbar {
