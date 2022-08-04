@@ -10,6 +10,9 @@ target 'NhaDoiOS' do
   pod 'Swinject'
 
   pod 'SwinjectStoryboard'
+  
+  # My libs
+  pod 'MyCocoapodsLibrary', :path => '../MyCocoapodsLibrary'
 
   # Pods for NhaDoiOS
 
