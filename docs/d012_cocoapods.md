@@ -55,3 +55,20 @@ Add pod from git:
 
 https://guides.cocoapods.org/making/using-pod-lib-create
 
+1. Run
+```
+pod lib create MyLibrary
+```
+2. Add your code to MyLibrary/Classes
+ - a Swift library needs to have its classes declared as public for you to see them in your project using the library.
+3. Add your pod to Podfile of your app project
+
+4. Run `pod install`
+
+5. Import your lib when you want to use it
+
+```
+import MyLibrary
+```
+
+6. Use your lib
