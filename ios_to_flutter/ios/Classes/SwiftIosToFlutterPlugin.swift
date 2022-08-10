@@ -9,6 +9,6 @@ public class SwiftIosToFlutterPlugin: NSObject, FlutterPlugin {
   }
 
   public func handle(_ call: FlutterMethodCall, result: @escaping FlutterResult) {
-    result("iOS " + UIDevice.current.systemVersion)
+    result("iOS Nha " + UIDevice.current.systemVersion)
   }
 }
